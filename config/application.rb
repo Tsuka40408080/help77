@@ -25,3 +25,6 @@ module Myapp
     # config.eager_load_paths << Rails.root.join("extras")
   end
 end
+# Add this after the Myapp::Application class definition
+ActiveRecord::Base.singleton_class.attr_accessor :timestamped_migrations
+ActiveRecord::Base.timestamped_migrations = true

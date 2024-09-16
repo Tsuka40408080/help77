@@ -1,0 +1,18 @@
+// カスタムBootstrapスタイル
+
+// Bootstrapの変数とミックスインをインポート（必要に応じて）
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+
+// 問題のあるスタイルをオーバーライド
+.display-1,
+.display-2,
+.display-3,
+.display-4,
+.display-5,
+.display-6 {
+  font-family: $display-font-family;
+  font-weight: $display-font-weight;
+  line-height: $display-line-height;
+}
